@@ -381,6 +381,71 @@ https://github.com/jonathanbaraldi/rancher-ha.git
 
 
 
+
+
+
+
+
+
+
+# Traefik 2.2
+
+https://blog.tomarrell.com/post/traefik_v2_on_kubernetes
+
+https://traefik.io/blog/traefik-2-2-ingress/
+
+
+Ubuntu 20.04 LTS
+
+Docker 19.03
+
+Kubernetes 1.19.2
+
+Rancher 2.5
+
+Traefik 2.2
+
+
+
+```sh
+
+$ cd traefik22
+# Alterar o ingress, colocar o host do seu endereço
+# Alerar o email e o comentário de staging no deamon-set
+$ kubectl apply -k .
+
+# Acessar o dashboard
+
+$ kubectl apply -f app2.yml
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # PRODUCAO
 
 ## Segurança
@@ -390,14 +455,4 @@ https://github.com/jonathanbaraldi/rancher-ha.git
 	- Portas das máquinas
 	- Usuarios e namespaces
 
-
-## Administração e gerenciamento do cluster
-	- Limpeza do clsuter
-	- Limites dos PODS e NAMESPACES
-	- Serviços para os desenvolvedores
-
-	- Logs
-	- monitoramento
-	- Registro
-	- Pipeline
 
